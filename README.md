@@ -33,6 +33,9 @@ python3 main.py
 ## 开发教程：  
 参见本项目Wiki
 
+## 许可协议
+有附加要求的MIT许可证（见LICENSE文件）
+
 ## 鸣谢
 https://blog.csdn.net/weixin_42066185/article/details/106670921  
 https://blog.csdn.net/QQ_1993445592/article/details/102578595  
