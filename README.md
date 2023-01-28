@@ -32,3 +32,12 @@ python3 main.py
 ```
 ## 开发教程：  
 参见本项目Wiki
+
+## 鸣谢
+https://blog.csdn.net/weixin_42066185/article/details/106670921  
+https://blog.csdn.net/QQ_1993445592/article/details/102578595  
+两位作者提供的线程停止和AES加密代码
+
+[Jetbrains](https://www.jetbrains.com/)所提供的PyCharm Professional For Student开发工具
+
+以及本项目的所有依赖库
