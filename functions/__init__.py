@@ -40,7 +40,7 @@ class Device:
         """
         Send Message to device in privacy
         """
-        self.sock.send(AES.encrypt(data, self.aes_key))
+        self.sock.send(f'PrivateMessage {AES.encrypt(data.encode("utf-8"), self.aes_key)}')
 
     def kill(self):
         """
