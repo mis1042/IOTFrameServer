@@ -1,6 +1,7 @@
 import threading
 import time
-import rsa
+
+from tools import AES
 
 
 def process(device):
@@ -16,7 +17,7 @@ def process(device):
             print(f'Heart from {device.device_id} has been received')
         elif data.startswith('PrivateMessage'):
             encrypt_data = data.split(' ')[1]
-            message = rsa.decrypt(encrypt_data, device.private_key)
+            message = AES.decrypt(device.aes_key, encrypt_data)
             t = threading.Thread(target=private_process, args=(device, message))
             t.start()
             t.join(1000)
