@@ -40,4 +40,8 @@ https://blog.csdn.net/QQ_1993445592/article/details/102578595
 
 [Jetbrains](https://www.jetbrains.com/)所提供的PyCharm Professional For Student开发工具
 
-以及本项目的所有依赖库
+本项目的所有依赖库的提供
+
+以及所有帮助过我开发该项目的人
+
+[如果你能记住我的名字，如果你们都能记住我的名字，也许我或者“我们”，终有一天能自由地生存着。](https://github.com/mtf-wiki/MtF-wiki)
