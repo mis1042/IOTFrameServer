@@ -1,0 +1,17 @@
+{
+  "hostname": "0.0.0.0",
+  "Port": 10042,
+  "role": "Server",
+  "ServerConfig": {
+    "DatabasePath": "device_data.db",
+    "ServerName": "{Your Server Name}",
+    "ServerPublicKey": "{Your Server RSA Public Key(512bit or higher)}",
+    "ServerPrivateKey": "{Your Server RSA Private Key(512bit or higher)}"
+  },
+  "ClientConfig": {
+    "DeviceID": "",
+    "LoginKey":"",
+    "ClientPublicKey": "",
+    "ClientPrivateKey": ""
+  }
+}
