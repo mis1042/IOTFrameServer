@@ -1,7 +1,6 @@
 import hashlib
 import random
 import sqlite3
-
 from functions import Device
 from functions.device_processer import *
 from functions.global_variable import *

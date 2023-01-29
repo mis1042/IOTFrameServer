@@ -10,9 +10,7 @@
   },
   "ClientConfig": {
     "DeviceID": "",
-    "LoginKey": "",
-    "ClientPublicKey": "",
-    "ClientPrivateKey": ""
+    "LoginKey": ""
   },
   "DevicePolicy": {
     "HeartTime": 10,
