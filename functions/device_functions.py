@@ -35,9 +35,11 @@ def device_register(sock, addr):
             device_object.init()
             database.close()
         else:
+            stop_thread(inactive_stop_t)
             sock.close()
             database.close()
     else:
+        stop_thread(inactive_stop_t)
         database.close()
         sock.close()
 
