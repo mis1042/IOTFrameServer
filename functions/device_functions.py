@@ -10,10 +10,10 @@ from tools.threading_stopper import *
 
 def device_register(sock, addr):
     database = sqlite3.connect(server_database)
-    inactive_stop_t = threading.Thread(target=inactive_stop, args=(threading.current_thread(), sock, 10))
+    inactive_stop_t = threading.Thread(target=inactive_stop, args=(threading.current_thread(), sock, InactiveStopTime))
     inactive_stop_t.start()
     # It can close the sock object and stop the thread object if the device is inactive for 10 seconds
-    session_id = 123456
+    session_id = random.randint(100000, 999999)
     hello_message = f'{server_name}-{session_id}'
     hello_sign = rsa.sign(hello_message.encode('utf-8'), server_privatekey, 'MD5')
     sock.send(f'ServerHello {hello_message} {hello_sign.hex()}'.encode('utf-8'))
@@ -51,10 +51,10 @@ def heart_check():
     """
     while True:
         for i in device_list:
-            if time.time() - i.time > 10:
+            if time.time() - i.time > HeartTime:
                 print(f'Device {i.device_id} has been disconnected')
                 i.kill()
-            if i.key_effective_time >= 10:
+            if i.key_effective_time >= AESReplaceTime:
                 i.update_device_aes_key()
                 i.key_effective_time = 0
         time.sleep(1)

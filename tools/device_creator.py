@@ -27,6 +27,11 @@ config['ClientConfig']['DeviceID'] = device_id
 config['ClientConfig']['LoginKey'] = loginkey
 config['ClientConfig']['ClientPublicKey'] = public
 config['ClientConfig']['ClientPrivateKey'] = private
+config['DevicePolicy']['HeartTime'] -= 1
+# Reduce the heartbeat duration of the client appropriately
+del config['DevicePolicy']['InactiveStopTime']
+del config['DevicePolicy']['AESReplaceTime']
+
 with open(f'./config_{device_id}_{config["ServerConfig"]["ServerName"]}.json', 'w+') as f:
     f.write(json.dumps(config))
 print(f'Device Config File Generated,Please Copy It To The Device And Run It')

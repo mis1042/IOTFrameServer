@@ -10,8 +10,13 @@
   },
   "ClientConfig": {
     "DeviceID": "",
-    "LoginKey":"",
+    "LoginKey": "",
     "ClientPublicKey": "",
     "ClientPrivateKey": ""
+  },
+  "DevicePolicy": {
+    "HeartTime": 10,
+    "InactiveStopTime": 10,
+    "AESReplaceTime": 30
   }
 }
