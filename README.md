@@ -3,7 +3,7 @@
 ## 快速开始
 ### Step0：准备服务端依赖
 ```shell
-pip3 install rsa
+pip3 install -r requirements.txt
 ```
 ### Step1：初始化您的服务端配置
 1.生成RSA密钥（方法很多，举个例子）
